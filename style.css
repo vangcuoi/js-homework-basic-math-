@@ -1,0 +1,13 @@
+input {
+  color: black;
+}
+
+button {
+  color: black;
+}
+
+body {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
