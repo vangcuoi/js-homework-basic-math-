@@ -18,8 +18,8 @@
 
 const tinhluong = document.getElementById("tinhluong");
 tinhluong.onclick = function () {
-  const a = document.getElementById("salary").value *1;
-  const b = document.getElementById("daysWorked").value *1;
+  const a = document.getElementById("salary").value * 1;
+  const b = document.getElementById("daysWorked").value * 1;
   let TS = a * b;
 
   const result = "tổng lương là: " + TS;
@@ -150,7 +150,7 @@ PnAbtn.onclick = function () {
 
 const abc = document.getElementById("Sum");
 abc.onclick = function () {
-  const n = document.getElementById("2ln").value *1;
+  const n = document.getElementById("2ln").value * 1;
 
   let donvi = 0;
   donvi = n % 10;
@@ -158,7 +158,7 @@ abc.onclick = function () {
   hangchuc = Math.floor(n / 10);
 
   const sum = donvi + hangchuc;
-  const sumresult = "tổng 2 ký tự của số vừa nhập là: " + sum;
+  const sumresult = `tổng 2 ký tự của số vừa nhập là: ${sum}`;
 
   const resultDisplay = document.getElementById("resultDisplay");
   resultDisplay.innerHTML = sumresult;
