@@ -18,12 +18,13 @@
 
 const tinhluong = document.getElementById("tinhluong");
 tinhluong.onclick = function () {
-  const a = document.getElementById("salary").value;
-  const b = document.getElementById("daysWorked").value;
+  const a = document.getElementById("salary").value *1;
+  const b = document.getElementById("daysWorked").value *1;
   let TS = a * b;
 
   const result = "tổng lương là: " + TS;
-  console.log(result);
+  const SalaryRD = document.getElementById("SalaryRD");
+  SalaryRD.innerHTML = result;
 };
 
 /**
@@ -51,8 +52,9 @@ avgbtn.onclick = function () {
 
   const avg = (g + h + c + d + e) / 5;
 
-  const avgResult = "kết quả trung bình là: " + avg;
-  console.log(avgResult);
+  const avgResult = "trung bình của năm số là: " + avg;
+  const AvgRD = document.getElementById("AvgRD");
+  AvgRD.innerHTML = avgResult;
 };
 
 /**
@@ -86,7 +88,8 @@ converterbtn.onclick = function () {
     document.getElementById("usdinput").value +
     " usd = " +
     formatter.format(convert);
-  console.log(convertresult);
+  const MCD = document.getElementById("MCD");
+  MCD.innerHTML = convertresult;
 };
 
 /**
@@ -110,8 +113,8 @@ converterbtn.onclick = function () {
 
 const PnAbtn = document.getElementById("PnAbtn");
 PnAbtn.onclick = function () {
-  const l = document.getElementById("lenght").value;
-  const w = document.getElementById("width").value;
+  const l = Number(document.getElementById("lenght").value);
+  const w = Number(document.getElementById("width").value);
 
   let perimeter = 0;
   perimeter = (l + w) * 2;
@@ -120,7 +123,9 @@ PnAbtn.onclick = function () {
   area = l * w;
 
   const PnAresult = "chu vi và diện tích là " + perimeter + " và " + area;
-  console.log(PnAresult);
+
+  const PnAResultDisplay = document.getElementById("PnAResultDisplay");
+  PnAResultDisplay.innerHTML = PnAresult;
 };
 
 /**
@@ -145,7 +150,7 @@ PnAbtn.onclick = function () {
 
 const abc = document.getElementById("Sum");
 abc.onclick = function () {
-  const n = document.getElementById("2ln").value;
+  const n = document.getElementById("2ln").value *1;
 
   let donvi = 0;
   donvi = n % 10;
@@ -154,5 +159,7 @@ abc.onclick = function () {
 
   const sum = donvi + hangchuc;
   const sumresult = "tổng 2 ký tự của số vừa nhập là: " + sum;
-  console.log(sumresult);
+
+  const resultDisplay = document.getElementById("resultDisplay");
+  resultDisplay.innerHTML = sumresult;
 };
