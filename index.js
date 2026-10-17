@@ -25,6 +25,12 @@ tinhluong.onclick = function () {
   const result = "tổng lương là: " + TS;
   const SalaryRD = document.getElementById("SalaryRD");
   SalaryRD.innerHTML = result;
+
+  SalaryRD.style.backgroundColor = "brown";
+  SalaryRD.style.color = "white";
+  SalaryRD.style.padding = "10px";
+  SalaryRD.style.borderRadius = "5px";
+  SalaryRD.style.fontWeight = "bold";
 };
 
 /**
@@ -55,6 +61,12 @@ avgbtn.onclick = function () {
   const avgResult = "trung bình của năm số là: " + avg;
   const AvgRD = document.getElementById("AvgRD");
   AvgRD.innerHTML = avgResult;
+
+  AvgRD.style.backgroundColor = "orange";
+  AvgRD.style.color = "white";
+  AvgRD.style.padding = "10px";
+  AvgRD.style.borderRadius = "5px";
+  AvgRD.style.fontWeight = "bold";
 };
 
 /**
@@ -90,6 +102,12 @@ converterbtn.onclick = function () {
     formatter.format(convert);
   const MCD = document.getElementById("MCD");
   MCD.innerHTML = convertresult;
+
+  MCD.style.backgroundColor = "blue";
+  MCD.style.color = "white";
+  MCD.style.padding = "10px";
+  MCD.style.borderRadius = "5px";
+  MCD.style.fontWeight = "bold";
 };
 
 /**
@@ -126,6 +144,12 @@ PnAbtn.onclick = function () {
 
   const PnAResultDisplay = document.getElementById("PnAResultDisplay");
   PnAResultDisplay.innerHTML = PnAresult;
+
+  PnAResultDisplay.style.backgroundColor = "purple";
+  PnAResultDisplay.style.color = "white";
+  PnAResultDisplay.style.padding = "10px";
+  PnAResultDisplay.style.borderRadius = "5px";
+  PnAResultDisplay.style.fontWeight = "bold";
 };
 
 /**
@@ -162,4 +186,10 @@ abc.onclick = function () {
 
   const resultDisplay = document.getElementById("resultDisplay");
   resultDisplay.innerHTML = sumresult;
+
+  resultDisplay.style.backgroundColor = "blue";
+  resultDisplay.style.color = "white";
+  resultDisplay.style.padding = "10px";
+  resultDisplay.style.borderRadius = "5px";
+  resultDisplay.style.fontWeight = "bold";
 };
